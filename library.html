@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        My List of Books Library
+    </h1>
+    <table id="library" border="1">
+        <thead>
+            <td>TITLE</td>
+            <td>STATUS</td>
+            <td></td>
+        </thead>
+    </table>
+
+    
+    Recently Added
+    <p id="added"></p>
+
+    <h2>Add Books</h2>
+    <form id="addLibrary"  method="post" onsubmit="return false">
+        <label>
+            Title: 
+        </label><br>
+        <input type="text" id="title" required><br>
+        <label>
+            Author: 
+        </label><br>
+        <input type="text" id="author"><br>
+        <label>
+            Pages: 
+        </label><br>
+        <input type="number"0 id="pages"><br>
+        
+        <label>Have read?: </label><br>
+        <label>Yes</label><input type="radio" id="r1"  name ="read" value="true" required><br>
+        <label>No</label><input type="radio" id="r2" name ="read" value="false"><br>
+
+        
+        <input type="submit" value="Submit" onclick="addBook()">
+    </form>
+    
+    <script src='Odin_book.js'></script>
+    <br><hr>
+
+</body>
+</html>
